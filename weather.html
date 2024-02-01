@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> -->
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    /* background: #116396; */
+    background-image: url(images/bg_image.jpg) !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
+}
+.container-fluid
+{
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+}
+.inputs 
+{
+    padding: 25px 0 25px 0;
+    text-align: center;
+    justify-content: center;
+    /* background: white; */
+}
+.inputs input[type="text"] 
+{
+    height: 35px;
+    width: 305px;
+    background: #212121; 
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #0a67ca;
+    border-radius: 2px;
+    margin-right:4px ;
+}
+.inputs input[type="submit"]
+{
+    height: 25px;
+    width: 70px;
+    background: #0a67ca;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 2px;
+}
+.welcome 
+{
+    text-align: center;
+    width: 400px;
+    color: #16a864;
+}
+.wrapper 
+{
+    margin: 0 9rem;
+    /* background-color: white; */
+    background-image: url(images/clouds.gif) !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 45vh;
+    margin: 50px auto;
+    border-radius: 2px;
+}
+ 
+.wrapper h2
+{
+    padding: 5px 0;
+    text-align: center;
+    background: #0548b5;
+    color: white;
+    font-family: sans-serif;
+}
+.wrapper p
+{
+    margin:20px 50px;
+    margin-right: 20px;
+    text-align: left;
+    color: #04214c;
+    font-size:23px;
+}
+.wrapper h2 span
+{
+    font-size: 26px;
+    color: #9beefb;
+}
+.wrapper p span
+{
+    color: #f4780d;
+    font-size: 25px;
+}
+
+/* .day_info .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+} */
+
+
+    </style>
+</head>
+<body>
+    <title>Weather Report</title>
+    <div class="container-fluid">
+        <title>Weather Report</title>
+        <section class="main">
+            
+          <section class="inputs">
+            <input type="text" placeholder="Enter any city..." id="cityinput">
+            <input type="submit" value="Submit" id="add">
+            <!-- <button placeholder="submit" id="add"></button> -->
+          </section>
+          <section class="welcome">
+            <div class="wrapper">
+               <h2 id="cityoutput">Hyderabad</h2>
+              <p id="description">Description: Its a beautiful day</p>
+              <p id="temp">Temparature: 32</p>
+              <p id="wind"> Wind: 10 km/h</p>
+              <p id="Humidity"> Humidity: 49%</p>
+             
+            </div>
+          </section>
+        </section>
+    
+    </div>
+</body>
+</html>
