@@ -34,14 +34,14 @@ body
     justify-content: center;
     /* background: white; */
 }
-.inputs input[type="text"] 
+.inputs select[name="city"] 
 {
     height: 35px;
     width: 305px;
     background: #212121; 
     font-weight: bold;
     font-size: 15px;
-    padding: 10px;
+    padding: 3px;
     border: none;
     background-color: transparent;
     border: 2px solid #0a67ca;
@@ -122,10 +122,23 @@ body
         <section class="main">
             
           <section class="inputs">
-            <input type="text" placeholder="Enter any city..." id="cityinput">
-            <input type="submit" value="Submit" id="add">
+            <label for="cityinput"></label>
+                <select name="city" id="cityinput">
+                    <option value="" disabled selected hidden>Select any city...</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Banglore">Banglore</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Delhi">Delhi</option>
+                </select>
+            <input type="submit" value="Submit" id="add" onclick="myFunction()">
             <!-- <button placeholder="submit" id="add"></button> -->
           </section>
+           <script>
+                function myFunction() {
+                    var x = document.getElementById("cityinput").value;
+                    document.getElementById("cityoutput").innerHTML = x;
+                }
+            </script>
           <section class="welcome">
             <div class="wrapper">
                <h2 id="cityoutput">Hyderabad</h2>
